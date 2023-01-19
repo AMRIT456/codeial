@@ -68,9 +68,7 @@ module.exports.destroySession = function(req, res){
         res.redirect('/');
     });
 
-<<<<<<< HEAD
-}
-=======
+
 }
 
 // sign in and create a session for the user
@@ -107,4 +105,4 @@ module.exports.destroySession = function(req, res){
 
     
 // }
->>>>>>> 319221a7e23df3cad8f0cf8b3148209cd477894d
+

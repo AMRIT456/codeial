@@ -13,8 +13,5 @@ router.use('/users', require('./users'));
 // router.use('/routerName', require('./routerfile));
 
 
-<<<<<<< HEAD
+
 module.exports = router;
-=======
-module.exports = router;
->>>>>>> 319221a7e23df3cad8f0cf8b3148209cd477894d
