@@ -20,7 +20,10 @@
     "express-ejs-layouts": "^2.5.1",
     "express-session": "^1.17.3",
     "mongoose": "^6.8.3",
+<<<<<<< HEAD
     "node-sass-middleware": "^1.0.1",
+=======
+>>>>>>> 319221a7e23df3cad8f0cf8b3148209cd477894d
     "passport": "^0.6.0",
     "passport-local": "^1.0.0"
   }
