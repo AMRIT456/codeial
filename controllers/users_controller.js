@@ -15,7 +15,8 @@ module.exports.profile = function(req, res){
 
 
 module.exports.update = async function(req, res){
-    // if(req.user.id==req.params.id){
+   
+// if(req.user.id==req.params.id){
     //     User.findByIdAndUpdate(req.params.id,req.body,function(err,user){
     //         return res.redirect('back');
     //     })
@@ -36,7 +37,6 @@ module.exports.update = async function(req, res){
                 if (req.file){
 
                     if (user.avatar){
-                        // this is saving the path of the uploaded file into the avatar field in the user
                         fs.unlinkSync(path.join(__dirname, '..', user.avatar));
                     }
 
@@ -118,16 +118,14 @@ module.exports.createSession = function(req, res){
 
 module.exports.destroySession = function(req, res,next){
     req.logout(function(err){
-        if(err){
-            return next(err);
-        }
+        if(err){return next(err);}
         return res.redirect('/');
     });
     req.flash('success', 'You have logged out!');
 
 
     
-};
+}
 // sign in and create a session for the user
 // module.exports.createSession = function(req, res){
 
